@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: "login to Docker hup"
+      - name: "Login to Docker hup"
         run: docker login --username ${{ secrets.Docker_USERNAME }} --password ${{secrets.DOCKER_TOKEN }}
 
       - name: "Bulding docker image"
