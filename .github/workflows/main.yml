@@ -7,13 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Before'  
-        run: ls
-
       - uses: actions/checkout@v3
 
-      - name: 'After'  
-        run: ls
-
+      - name: "login to Docker hup"
+        run: docker login --username donia2002 --password dckr_pat_C_kv4iP1mVXSCOCnAGgX4bNgZ9I
 
 
